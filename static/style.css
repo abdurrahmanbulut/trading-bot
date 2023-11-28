@@ -1,0 +1,73 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, sans-serif;
+  }
+  
+  .container {
+	height: 100vh;
+	padding-left: 40px;
+	padding-right: 40px;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .profile-balance {
+	display: flex;
+	align-items: center;
+  }
+  
+  .profile-pic {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: grey;
+	margin-left: 10px;
+  }
+  
+  .card {
+	background-color: #f0f0f0;
+	padding: 20px;
+	margin-top: 20px;
+	height: 100%;
+	/* Placeholder for the graphs */
+  }
+  
+  .controls {
+	display: flex;
+	justify-content: start;
+	margin-top: 20px;
+  }
+  
+  select, button {
+	padding: 10px;
+	margin-right: 10px;
+  }
+  
+  button {
+	cursor: pointer;
+  }
+  
+  #start-stop {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+  }
+  
+  #start-stop:hover {
+	opacity: 0.8;
+  }
+  .cards-horizontal{
+	display: flex;
+	justify-content: space-between;
+	height: 30%;
+  }
+  .cards-vertical{
+	width: 40%;
+	height: 100%; 
+  }
+  

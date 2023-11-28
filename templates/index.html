@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Trading Bot</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Crypto Trading Bot</h1>
+    <div class="profile-balance">
+      <span id="balance">1000</span>
+      <div class="profile-pic"></div>
+    </div>
+  </header>
+
+  <section class="controls">
+    <select id="coin-name">
+      <option value="BTC">BTC</option>
+      <option value="ETC">ETC</option>
+      <option value="XRP">XRP</option>
+      <!-- Options will be populated by JavaScript -->
+    </select>
+    <select id="data-range">
+      <option value="1m">1 Minute</option>
+      <option value="15m">15 Minutes</option>
+      <option value="1h">1 Hours</option>
+      <option value="4h">4 Hours</option>
+      <!-- Add more data intervals as needed -->
+    </select>
+    <select id="amount-percentage">
+      <option value="10">%10</option>
+      <option value="25">%25</option>
+      <option value="50">%50</option>
+      <option value="75">%75</option>
+      <option value="100">%100</option>
+      <!-- Add more data intervals as needed -->
+    </select>
+    <button id="start-stop">Start/Stop</button>
+  </section>
+
+  <div class="cards-horizontal">
+    <div class="cards-vertical">
+      <div class="card" id="graph">
+        <canvas id="priceChart"></canvas>
+      </div>
+      <div class="card" id="technical-analysis">
+        <canvas id="technicalChart"></canvas>
+      </div>
+    </div>
+    <div class="cards-vertical">
+      <div class="card" id="trade-history">
+        
+      </div>
+      <div class="card" id="total-profit"></div>
+    </div>
+  </div>
+  
+  
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../static/action.js"></script>
+</body>
+</html>
